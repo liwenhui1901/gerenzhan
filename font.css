@@ -1,0 +1,135 @@
+@keyframes beat{
+		0%{
+			content:"";
+		}
+		1%{
+			content:"<>";
+		}
+		2%{
+			content:"<div>";
+		}
+		3%{
+			content:"<div class>";
+		}
+		4%{
+			content:"<div class=''>";
+		}
+		5%{
+			content:"<div class='section'>";
+		}
+		6%{
+			content:"<div class='section'><d'>";
+		}
+		7%{
+			content:"<div class='section'><div>";
+		}
+		8%{
+			content:"<div class='section'><div class>";
+		}
+		9%{
+			content:"<div class='section'><div class='sect'>";
+		}
+		10%{
+			content:"<div class='section'><div class='section__item'>";
+		}
+		11%{
+			content:"<div class='section'><div class='section__item'><d>";
+		}
+		12%{
+			content:"<div class='section'><div class='section__item'><div>";
+		}
+		13%{
+			content:"<div class='section'><div class='section__item'><div class>";
+		}
+		14%{
+			content:"<div class='section'><div class='section__item'><div class='sec'>";
+		}
+		15%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'>";
+		}
+		16%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a";
+		}
+		17%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href";
+		}
+		18%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href=''";
+		}
+		19%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' cla";
+		}
+		20%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='";
+		}
+		21%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-";
+		}
+		22%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link";
+		}
+		23%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai";
+		}
+		24%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-ele";
+		}
+		25%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element";
+		}
+		26%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai'>";
+		}
+		27%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-'>";
+		}
+		28%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-elem'>";
+		}
+		29%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element'>";
+		}
+		30%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg'>";
+		}
+		35%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'>";
+		}
+		40%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span>";
+		}
+		45%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div>";
+		}
+		50%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'>";
+		}
+		55%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element";
+		}
+		60%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom'>";
+		}
+		65%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom ai-element2'>";
+		}
+		70%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom ai-element2'><span class=''>";
+		}
+		75%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom ai-element2'><span class=''></span>";
+		}
+		80%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom ai-element2'><span class='ai-element'></span>";
+		}
+		85%{
+			
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom ai-element2'><span class='ai-element__label'>I'm a button</span>";
+		}content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom ai-element2'><span class='ai-element__label'></span>";
+		}
+		90%{
+		95%{
+			content:"<div class='section'><div class='section__item'><div class='section__box'><a href='#0' class='r-link ai-element ai-element_bg ai-element9'><span class='ai-element__label'>I'm a link</span></a></div><div class='section__box'><button class=r-button ai-element ai-element_padding-bottom ai-element2'><span class='ai-element__label'>I'm a button</span></button></div>";
+		}
+		
+	}

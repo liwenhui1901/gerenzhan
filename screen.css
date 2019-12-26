@@ -1,0 +1,182 @@
+.dao{
+	position:absolute;
+	left:3%;
+	top:25%;
+}
+.dao li{
+	width:30px;
+	height:30px;
+	margin-top: 100%;
+	_margin-top: 100%;
+	border:1px solid black;
+	border-radius: 50%;
+	background: white;
+	_background: white;
+}
+#zero .p1{
+	font-size: 50px;
+	_font-size: 50px;
+	width:50px;
+	position:absolute;
+	left:10%;
+	top:30%;
+	animation: gy1 1s ease 1s both;
+}
+@keyframes gy1{
+	form{
+		left:10%;
+		font-size: 50px;
+		_font-size: 50px;
+	}
+	to{
+		font-size: 70px;
+		_font-size: 70px;
+		left:25%;
+	}
+}
+#zero .p2{
+	font-size: 45px;
+	_font-size: 45px;
+	width:60px;
+	position:absolute;
+	right:-5%;
+	top:5%;
+	animation: gy2 2s ease 1s both;
+}
+@keyframes gy2{
+	form{
+		right:-5%;
+	}
+	to{
+		right:15%;
+	}
+}
+#one div:nth-child(1){
+	width: 150px;
+	height: 150px;
+	font-size: 30px;
+	_font-size: 30px;
+	color:white;
+	text-align: center;
+	line-height: 150px;
+	position:absolute;
+	left:68%;
+	top:100px;
+	border-radius: 50%;
+	box-shadow: inset 20px -40px 70px 15px pink;
+	animation: gy 2s ease 0s infinite alternate;
+}
+#one div:nth-child(2){
+	width: 50px;
+	height: 15px;
+	background-color: pink;
+	_background-color: pink;
+	border-radius: 50%;
+	position: absolute;
+	left:71%;
+	top:400px;
+	animation: gyy 2s ease 0s infinite alternate;
+}
+@keyframes gy{
+	form{
+		top:100px;
+	}
+	to{
+		top:250px;
+	}
+}
+@keyframes gyy{
+	form{
+		width:50px;
+	}
+	to{
+		width:120px;
+		left:69%;
+	}
+}
+#one ul{
+	margin-top:8%;
+	_margin-top:8%;
+}
+#two .zhan{
+	width:19%;
+	height: 6%;
+}
+.heart {
+	animation:heartbeat 1s infinite;
+	-webkit-animation:heartbeat 1s infinite;
+	/* Safari 和 Chrome */
+
+      width:198px;
+	height:188px;
+	background:#f00;
+	position:relative;
+	filter:drop-shadow(0px 0px 20px rgb(255,20,20));
+	transform:rotate(45deg);
+	left:200px;
+	top:50px;
+}
+.heart:before,.heart:after {
+	content:"zhanshi展示";
+	position:absolute;
+	width:200px;
+	height:200px;
+	background:#f00;
+	border-radius:100px;
+	color: white;
+	 font-size: 74px;
+}
+.heart:before {
+	left:-100px;
+}
+.heart:after {
+	left:0;
+	top:-100px;
+}
+@keyframes heartbeat {
+	0% {
+	transform:rotate(45deg) scale(0.8,0.8);
+	opacity:1;
+}
+25% {
+	transform:rotate(45deg) scale(1,1);
+	opacity:0.8;
+}
+100% {
+	transform:rotate(45deg) scale(0.8,0.8);
+	opacity:1;
+}
+}
+#imgs{
+	width: 22%;
+	height: 40%;
+	margin-top: 0%;
+	margin-left: 70%;
+	}
+	#two #src{
+	width: 20%;
+	top: 65%;
+}
+.section {
+    width: 10%;
+    height: 23%;
+    font-size: 44px;
+}
+#four p:after {
+	font-size:60px;
+}
+#skill li h3 {
+    top: -50px;
+    font-size: 65px;
+}
+#skill {
+	margin: 11% auto 0;
+	 line-height: 3em;
+}
+.bar {
+	height: 3.5%;
+	border-radius: 25px;
+}
+#skill li {
+	margin-bottom: 15%;
+}

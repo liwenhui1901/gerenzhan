@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:600px)" href="phone.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:600px)" href="ipa.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:1025px)" href="screen.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		@font-face{
+			font-family: "ziti";
+			src:url("images/ziti.ttf") format("truetype");
+		}
+		body{
+			font-family: 'ziti';
+		}
+		ul{
+			list-style: none;
+		}
+		.dao li:nth-child(1){
+			background: #ddd;
+			_background:#ddd;
+		}
+		#zero,#one,#two,#there,#four,#five{
+			position:absolute;
+			top:0px;
+			left:100%;
+			width:100%;
+			height: 100%;
+			display: none;
+			overflow: hidden;
+			_zoom:1;
+		}
+		#zero{
+			background: url(images/5.jpeg) no-repeat;	
+			_background: url(images/5.jpeg) no-repeat;		
+			background-size:100% 100%;
+			_background-size:100% 100%;
+		}
+		#one{
+			background: url(images/0.jpg) no-repeat;
+			background-size:100% 100%;
+			background-size:100% 100%;
+		}
+		#two{
+			background: url(images/3.jpg) no-repeat;
+			background-size:100% 100%;
+			background-size:100% 100%;
+		}
+		#there{
+			background: url(images/5.jpg) no-repeat;
+			background-size:100% 100%;
+			background-size:100% 100%;
+		}
+		#four{
+			background: url(images/4.jpg) no-repeat;
+			background-size:100% 100%;
+			background-size:100% 100%;
+		}
+		#five{
+			background: url(images/1.jpg) no-repeat;
+			background-size:100% 100%;
+			background-size:100% 100%;
+		}
+		#one ul{
+			width:30%;
+			height: 70%;
+			background: #d9c4cb;
+			_background:  #d9c4cb;
+			margin-left: 20%;
+			_margin-left: 20%;
+			border-radius: 20px;
+			padding:20px;
+		}
+		#one ul li{
+			width:100%;
+			text-align: center;
+			opacity: 0;
+			filter:alpha(opacity=0);
+		}
+		.music{
+			width:30px;
+			height: 30px;
+			position:absolute;
+			right:3%;
+			top:3%;
+			z-index: 999;
+			border:1px solid pink;
+			border-radius: 10px;
+			display: block;
+			/*background: url(images/start.png) no-repeat;*/
+		}
+		#imgs{
+			/*width: 24%;
+			height: 40%;
+			margin-top: 20%;
+			margin-left: 70%;*/
+			border:1px solid black;
+			/*景深*/
+			perspective: 500px;
+		}
+		#imgs img{
+			backface-visibility: hidden;
+			width: 100%;
+			height: 100%;
+			position:absolute;
+			left:0;
+			top:0;			
+			transition: all 1s ease 0s;
+		}
+		#imgs img:nth-child(1){		
+			transform: rotateX(-180deg);
+		}
+		#imgs:hover img:nth-child(1){
+			transform:rotateX(0deg);
+		}
+		#imgs:hover img:nth-child(2){
+			transform:rotateX(180deg);
+		}
+		#two #src{
+			/*width: 22%;*/
+			position:absolute;
+			left: 10%;
+			/*top:50%;*/
+			border-radius: 50%;
+			animation: img 6s ease 1s infinite alternate;	
+		}
+		#two #src:hover{
+			animation:forwards;
+		}
+		@keyframes img{
+			from{
+				left: 10%;
+			}
+			to{
+				left: 90%;
+			}
+			0%{
+				left: 10%;
+				transform:rotate(0deg);
+			}
+			50%{
+				left: 50%;
+				transform:rotate(180deg);
+			}
+			100%{
+				left:90%;
+				transform:rotate(360deg);
+			}
+		}
+	 .t-box{
+            height: 78px;
+            width: 78px;
+            padding: 5px;
+            background: linear-gradient(to right bottom,#a1c3f9,#4a86e8);
+            border: 2px solid #3d7ce5;
+            border-radius: 10px;
+            float: left;
+            margin: 5px 10px;
+            box-sizing: border-box;
+        }
+.section{
+  display: flex;
+  /*height: 6%;	*/
+  text-align: center;	
+  /*font-size: 17px;*/
+  font-weight: 700;
+  float: left;
+    margin: 7%;
+}
+
+
+.section__item{
+  margin: auto;
+}
+
+.section__box:nth-child(n+2){
+  margin-top: 40px;
+}
+#four p{
+	display: block;
+    width: 38%;
+    height: 70%;
+    padding-top: 6%;
+    background: url(images/6.png);
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+	#four p:after {
+	    content: "";
+	    color: white;
+	    /*font-size: 42px;*/
+	    color:#FFC107;
+	     word-break:break-all;
+	    font-family:"黑体";
+	    animation: beat 5s ease 1s infinite;
+	}
+	@keyframes beat{
+		0%{
+			content:"";
+		}
+		4%{
+			content:"d";
+		}
+		8%{
+			content:"di";
+		}
+		12%{
+			content:"div";
+		}
+		16%{
+			content:"<div></div>";
+		}
+		20%{
+			content:"<div c></div>";
+		}
+		24%{
+			content:"<div cl></div>";
+		}
+		28%{
+			content:"<div cla></div>";
+		}
+		32%{
+			content:"<div class></div>";
+		}
+		36%{
+			content:"<div class=''></div>";
+		}
+		40%{
+			content:"<div class='s'></div>";
+		}
+		44%{
+			content:"<div class='se'></div>";
+		}
+		48%{
+			content:"<div class='sec'></div>";
+		}
+		52%{
+			content:"<div class='sect'></div>";
+		}
+		56%{
+			content:"<div class='secti'></div>";
+		}
+		60%{
+			content:"<div class='sectio'></div>";
+		}
+		64%{
+			content:"<div class='section'>l</div>";
+		}
+		68%{
+			content:"<div class='section'>la</div>";
+		}
+		72%{
+			content:"<div class='section'>lab</div>";
+		}
+		76%{
+			content:"<div class='section'>labe</div>";
+		}
+		80%{
+			content:"<div class='section'>label p</div>";
+		}
+		80%{
+			content:"<div class='section'>label pa</div>";
+		}
+		84%{
+			content:"<div class='section'>label pad</div>";
+		}
+		88%{
+			content:"<div class='section'>label padd</div>";
+		}
+		92%{
+			content:"<div class='section'>label paddi</div>";
+		}
+		96%{
+			content:"<div class='section'>label paddin</div>";
+		}
+		100%{
+			content:"<div class='section'>label padding</div>";
+		}
+	}
+	#skill {
+	    list-style: none;
+	    font-size: 20%;
+	    width: 50%;
+	    /*margin: 15% auto 0;*/
+	    padding: 10% 0;
+	    position: relative;
+	   /* line-height: 3em;*/
+	}
+	#skill li {
+	    /*margin-bottom: 15%;*/
+	    background: #e9e5e2;
+	    background: #e9e5e2;
+	    background-image: -webkit-linear-gradient(top,#f9eee2,#8e847d);
+	    background-image: -moz-linear-gradient(top,#f9eee2,#8e847d);
+	    background-image: -ms-linear-gradient(top,#f9eee2,#8e847d);
+	    background-image: -o-linear-gradient(top,#f9eee2,#8e847d);
+	    background-image: linear-gradient(top,#f9eee2,#8e847d);
+	    height: 10%;
+	    /*border-radius: 16px;    /*--背景槽的圆角--*/
+	    -webkit-box-shadow: 0 1px 0 #bebbb9 inset, 0 1px 0 #fcfcfc;
+	}
+	#skill li h3 {
+	    position: relative;
+	    /*top: -50px;*/
+	    /*font-size: 65px;*/
+	    color: #009688;
+	}
+	/*--进度条的统一样式--*/
+	.bar {
+	    /*height: 4.3%;*/
+	    margin: 1px 2px;
+	    _margin: 1px 2px;
+	    position: absolute;
+	    /*border-radius: 15px;*/
+	    -webkit-box-shadow:0 1px 0 #fcfcfc inset, 0 1px 0 #bebbb9;
+	}    
+	/*--单独设置进度条的样式--*/
+
+	.html-css {
+	     width: 90%;
+	    -webkit-animation: html-css 2s ease-in-out;
+	    background-color: #0674a4;
+	    background-image: -webkit-linear-gradient(top, #0674a4, #006995);
+	    background-image: -moz-linear-gradient(top, #0674a4, #006995);
+	    background-image: -ms-linear-gradient(top, #0674a4, #006995);
+	    background-image: -o-linear-gradient(top, #0674a4, #006995);
+	    background-image: linear-gradient(top, #0674a4, #006995);
+	}
+	.jQuery {
+	     width: 65%;
+	    -webkit-animation: jQuery 2s ease-in-out;
+	    background-color: #06f4a4;
+	    background-image: -webkit-linear-gradient(top, #06f4a4, #00f995);
+	    background-image: -moz-linear-gradient(top, #06f4a4, #00f995);
+	    background-image: -ms-linear-gradient(top, #06f4a4, #00f995);
+	    background-image: -o-linear-gradient(top, #06f4a4, #00f995);
+	    background-image: linear-gradient(top, #06f4a4, #00f995);
+	}
+	.css3 {
+	     width: 80%;
+	    -webkit-animation: css3 2s ease-in-out;
+	    background-color: #06f4ff;
+	    background-image: -webkit-linear-gradient(top, #06f4ff, #00f9ff);
+	    background-image: -moz-linear-gradient(top, #06f4ff, #00f9ff);
+		background-image: -ms-linear-gradient(top, #06f4ff, #00f9ff);
+		background-image: -o-linear-gradient(top, #06f4ff, #00f9ff);
+		background-image: linear-gradient(top, #06f4ff, #00f9ff);
+	}
+	/*--设置每条进度条的关键帧动画--*/
+	@keyframes html-css {
+	    0% {width:0;}
+	    100%{width:90%;}
+	}
+	@keyframes jQuery {
+	    0% {width:0;}
+	    100%{width:65%;}
+	}
+	@keyframes css3 {
+	    0% {width:0;}
+	    100%{width:80%;}
+	}
+</style>
+</head>
+<body>
+	
+	<div id="zero" class="hid ">
+		<p class="p1">
+			李雯慧
+		</p>
+		<p class="p2">
+			一个幼师转业为H5的女孩
+		</p>
+	</div>
+	<div id="one" class="hid">
+		<div>基本情况</div>
+		<div></div>
+		<ul>
+			<li>性别：女</li>
+			<li>年龄：19</li>
+			<li>身高：153</li>
+			<li>星座：水瓶</li>
+			<li>种族：稀有汉</li>
+			<li>爱好：画画</li>
+			<li>体重：110</li>
+		</ul>
+	</div>
+	<div id="two" class="hid">
+		<p class="heart"></p>
+		<div id="imgs">
+			<img src="images/7.jpg" alt="">
+			<img src="images/6.jpg" alt="">
+		</div>
+		<img src="images/3.png" id="src">
+	</div>
+	<div id="there" class="hid">
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_padding-bottom ai-element2">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_padding-bottom ai-element2">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_padding-bottom ai-element3">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_padding-bottom ai-element3">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_padding-all ai-element1">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_padding-all ai-element1">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_padding-all ai-element5">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_padding-all ai-element5">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_bg ai-element6">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_bg ai-element6">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_bg ai-element7">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_bg ai-element7">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_bg ai-element8">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_bg ai-element8">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="section__item">
+				<div class="section__box">
+					<a href="#0" class="r-link ai-element ai-element_bg ai-element9">
+						<span class="ai-element__label">I'm a link</span>
+					</a>
+				</div>
+				<div class="section__box">
+					<button class="r-button ai-element ai-element_bg ai-element9">
+						<span class="ai-element__label">I'm a button</span>
+					</button>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="four" class="hid">
+		<p></p>
+	</div>
+	<div id="five" class="hid">
+	    <ul id="skill">
+	        <li><span class="bar html-css"></span><h3>html//css</h3></li>
+	        <li><span class="bar jQuery"></span><h3>jQuery</h3></li>
+	        <li><span class="bar css3"></span><h3>css3</h3></li>
+	    </ul>
+	</div>
+	<ul class="dao">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<audio src="images/music.mp3" id="audio"   loop autoplay ></audio>
+	<img src="images/1.png" class="music" id="music">
+<!--[if lt IE 9]>    //判断当前浏览器的版本是否小于IE 9
+
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+<![endif]-->
+  <!-- <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-1.11.3.js"></script> -->
+<script src="jquery-1.11.3.js"></script>
+<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+<script>
+	var num = true;
+	function block(){
+			$('#zero').css('display','block');
+			$('#zero').animate({'left':'0px'},1000);
+			$('div:eq(5)').animate({'left':'100%'},1000,function(){
+				$('#zero').siblings('div').css('display','none')
+				$('#zero').siblings('div').css('left','100%');
+			});		
+		}
+		block();
+	$('.hid').on('click',function(){
+		if(!num){return}
+		if($(this).index()>=5){
+			$(this).animate({'left':'100%'},1000);
+			$('.dao li:eq(0)').css('background','#ddd');
+			$('.dao li:eq(0)').siblings('li').css('background','white');
+			block();
+        	num = false
+		}else{
+			$(this).animate({'left':'100%'},1000,function(){
+				$(this).next().siblings('div').css({'display':'none','left':'100%'});
+			});		
+			$(this).next().css('display','block');
+			$(this).next().animate({'left':'0px'},1000);
+			$('.dao li:eq('+($(this).index()+1)+')').css('background','#ddd').siblings('li').css('background','white');
+        	num = false
+		}
+		setTimeout(function(){
+    		num = true;
+    	},1000);
+	})
+	var lock = true;
+	var music = document.getElementById('music');
+	var audio = document.getElementsByTagName('audio')[0];
+	music.onclick=function(){
+		if(!lock){
+			audio.pause();
+			lock = true;
+		}else{
+			audio.play();
+			setInterval(function(){
+	            var a = audio.currentTime;
+	            music.style.transform = 'rotate('+a*100+'deg)';
+			},0);
+			lock = false;
+		}			
+	}
+</script>
+</body>
+</html>

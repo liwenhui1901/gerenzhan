@@ -1,0 +1,398 @@
+.dao li{
+	width:30px;
+	height:30px;
+	margin-top: 100%;
+	_margin-top: 100%;
+	border:1px solid black;
+	border-radius: 50%;
+	background: white;
+	_background: white;
+}
+#zero .p1{
+	font-size: 20px;
+	_font-size: 20px;
+	width:35px;
+	position:absolute;
+	left:10%;
+	top:30%;
+	animation: gy1 1s ease 1s both;
+}
+
+@keyframes gy2{
+	form{
+		right:-5%;
+	}
+	to{
+		right:15%;
+	}
+}
+
+
+@media all and (orientation:landscape){		
+	.dao{
+		position:absolute;
+		top:3%;
+		left:2%;
+	}	
+	.dao li{
+		margin-top: 52%;
+	}
+	#zero .p2{
+		font-size: 20px;
+		_font-size: 20px;
+		width:25px;
+		position:absolute;
+		right:-5%;
+		top:1%;
+		animation: gy2 2s ease 1s both;
+	}
+	#one div:nth-child(1){
+		width: 150px;
+		height: 150px;
+		font-size: 30px;
+		font-size: 30px;
+		color:white;
+		text-align: center;
+		line-height: 150px;
+		position:absolute;
+		right:50px;
+		top:20px;
+		border-radius: 50%;
+		box-shadow: inset 20px -40px 70px 15px pink;
+		animation: gy 2s ease 0s infinite alternate;
+	}
+	@keyframes gy{
+		form{
+			top:20px;
+		}
+		to{
+			top:130px;
+		}
+	}
+	#one div:nth-child(2){
+		width: 50px;
+		height: 15px;
+		background-color: pink;
+		border-radius: 50%;
+		position: absolute;
+		left:73%;
+		top:280px;
+		animation: gyy 2s ease 0s infinite alternate;
+	}
+	@keyframes gyy{
+		form{
+			width:50px;
+		}
+		to{
+			width:120px;
+			left:67%;
+		}
+	}
+	@keyframes gy1{
+		form{
+			left:10%;
+			font-size: 20px;
+			_font-size: 20px;
+		}
+		to{
+			font-size: 35px;
+			_font-size: 35px;
+			left:25%;
+		}
+	}
+	#one ul{
+		margin-top:5%;
+		_margin-top:5%;
+	}
+	#one ul li{
+		font-size: 16px;
+		margin-top: 70px;
+		_margin-top: 70px;
+		animation: li 2s ease 1s both;
+	}
+	@keyframes li{
+		form{
+			opacity: 0;
+			margin-top: 70px;
+			filter:alpha(opacity=0);
+		}
+		to{
+			margin-top: 9px;
+			opacity: 1;
+			filter:alpha(opacity=100);
+		}
+	}
+	#two .zhan{
+		width: 25%;
+    	height: 12%;
+	}
+	.heart {
+	    animation: heartbeat 1s infinite;
+	    -webkit-animation: heartbeat 1s infinite;
+	    width: 11%;
+    	height: 20%;
+	    background: #f00;
+	    position: absolute;
+	    filter: drop-shadow(0px 0px 20px rgb(255,20,20));
+	    transform: rotate(45deg);
+	    left: 22%;
+	    top: 16%;
+	}
+	.heart:before {
+	    left: -64%;
+	    top: -7%;
+	}
+	.heart:before, .heart:after {
+	    content: "zhanshi展示";
+	    position: absolute;
+	    width: 106%;
+	    height: 107%;
+	    color: white;
+	    background: #f00;
+	    border-radius: 100px;
+	    font-size: 29px;
+	}
+	.heart:after {
+	    left: -6%;
+	    top: -61%;
+	}
+	.heart:before, .heart:after {
+	    content: "zhanshi展示";
+	    position: absolute;
+	    width: 106%;
+	    height: 107%;
+	    color: white;
+	    background: #f00;
+	    border-radius: 100px;
+	    font-size: 32px;
+	}
+	.heart:before {
+			left:-58%;
+		}
+		.heart:after {
+			left:-5%;
+			top:-53%;
+		}
+		@keyframes heartbeat {
+			0% {
+			transform:rotate(45deg) scale(0.8,0.8);
+			opacity:1;
+			}
+			25% {
+				transform:rotate(45deg) scale(1,1);
+				opacity:0.8;
+			}
+			100% {
+				transform:rotate(45deg) scale(0.8,0.8);
+				opacity:1;
+			}
+		}
+	#imgs{
+	    width: 26%;
+	    height: 45%;
+	    margin-left: 65%;
+	    margin-top: 11%;
+	}
+	#two #src{
+		width: 22%;
+		top: 64%;
+	}
+	.section {
+	    width: 11%;
+	    height: 21%;
+	    font-size: 13px;
+	}
+	#four p:after {
+		font-size:32px;
+	}
+	#skill li h3 {
+	    top: -30px;
+	    font-size: 38px;
+	}
+	#skill {
+		margin: 7% auto 0;
+		line-height: 2em;
+	}
+	.bar {
+    	height: 5.5%;
+    	border-radius: 10px;
+    }
+    #skill li {
+	    margin-bottom: 15%;
+	}
+}
+@media all and (orientation:portrait){
+	.dao{
+		position:absolute;
+		top:13%;
+		left:3%;
+	}
+	#zero .p2{
+		font-size: 25px;
+		width:25px;
+		position:absolute;
+		right:-5%;
+		top:10%;
+		animation: gy2 2s ease 1s both;
+	}
+	#one div:nth-child(1){
+		width: 100px;
+		height: 100px;
+		font-size: 20px;
+		color:white;
+		text-align: center;
+		line-height: 100px;
+		position:absolute;
+		right:5px;
+		top:100px;
+		border-radius: 50%;
+		box-shadow: inset 20px -40px 70px 15px pink;
+		animation: gy 2s ease 0s infinite alternate;
+	}
+	@keyframes gy{
+		form{
+			top:100px;
+		}
+		to{
+			top:250px;
+		}
+	}
+	#one div:nth-child(2){
+		width: 30px;
+		height: 10px;
+		background-color: pink;
+		_background-color: pink;
+		border-radius: 50%;
+		position: absolute;
+		left:78%;
+		top:350px;
+		animation: gyy 2s ease 0s infinite alternate;
+	}
+	@keyframes gyy{
+		form{
+			width:30px;
+		}
+		to{
+			width:80px;
+			left:71%;
+		}
+	}
+	@keyframes gy1{
+		form{
+			left:10%;
+			font-size: 20px;
+			_font-size: 20px;
+		}
+		to{
+			font-size: 30px;
+			_font-size: 30px;
+			left:25%;
+		}
+	}
+	#one ul{
+		margin-top:30%;
+		_margin-top:30%;
+	}
+	#one ul li{
+		font-size: 16px;
+		margin-top: 100px;
+		_margin-top: 100px;
+		animation: li 2s ease 1s both;
+	}
+	@keyframes li{
+		form{
+			opacity: 0;
+			margin-top: 100px;
+			filter:alpha(opacity=0);
+		}
+		to{
+			margin-top: 29px;
+			opacity: 1;
+			filter:alpha(opacity=100);
+		}
+	}
+	#two .zhan{
+		width: 45%;
+    	height: 6%;
+	}
+
+	.heart {
+	    animation: heartbeat 1s infinite;
+	    -webkit-animation: heartbeat 1s infinite;
+	    width: 21%;
+    	height: 12%;
+	    background: #f00;
+	    position: absolute;
+	    filter: drop-shadow(0px 0px 20px rgb(255,20,20));
+	    transform: rotate(45deg);
+	    left: 22%;
+	    top: 16%;
+	}
+	.heart:before {
+	    left: -64%;
+	    top: -7%;
+	}
+	.heart:before, .heart:after {
+	    content: "zhanshi展示";
+	    position: absolute;
+	    width: 106%;
+	    height: 107%;
+	    color: white;
+	    background: #f00;
+	    border-radius: 100px;
+	    font-size: 32px;
+	}
+	.heart:after {
+		left:-5%;
+		top:-59%;
+	}
+	@keyframes heartbeat {
+		0% {
+		transform:rotate(45deg) scale(0.8,0.8);
+		opacity:1;
+		}
+		25% {
+			transform:rotate(45deg) scale(1,1);
+			opacity:0.8;
+		}
+		100% {
+			transform:rotate(45deg) scale(0.8,0.8);
+			opacity:1;
+		}
+	}
+	#imgs{
+		width: 40%;
+	    height: 26%;
+	    margin-left: 57%;
+	    margin-top: 53%;
+	}
+	#two #src{
+	width: 30%;
+	top: 64%;
+}
+.section {
+    width: 36%;
+    height: 16%;
+    font-size: 22px;
+}
+#four p:after {
+	font-size:32px;
+}
+	#skill li h3 {
+	    top: -25px;
+	    font-size: 33px;
+	}
+	#skill {
+		margin: 60% auto 0;
+		line-height: 2em;
+	}
+	.bar {
+    	height: 7%;
+    	border-radius: 10px;
+    }
+    #skill li {
+	    margin-bottom: 25%;
+	    border-radius: 20px;
+	}
+		
+}
